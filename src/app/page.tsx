@@ -7,10 +7,9 @@ import { MoveHistory } from '@/components/MoveHistory';
 import { CapturedPieces } from '@/components/CapturedPieces';
 import { StatusBanner } from '@/components/StatusBanner';
 import { useChessStore } from '@/lib/store/useChessStore';
-import type { BoardTheme } from '@/lib/types';
 
 export default function GamePage() {
-  const { boardTheme, language, setLanguage, setBoardTheme, soundEnabled, toggleSound } = useChessStore();
+  const { boardTheme, language, soundEnabled, toggleSound } = useChessStore();
 
   useEffect(() => {
     const root = document.documentElement;
